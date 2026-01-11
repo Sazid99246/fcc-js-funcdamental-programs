@@ -38,7 +38,6 @@ function lookUpProfile(name, prop) {
     return "No such contact";
 }
 
-
 console.log(lookUpProfile("Kristian", "lastName"));
 console.log(lookUpProfile("Sherlock", "likes"));
 console.log(lookUpProfile("Harry", "likes"));
