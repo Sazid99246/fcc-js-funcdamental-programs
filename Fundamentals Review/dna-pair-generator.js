@@ -1,0 +1,21 @@
+function pairElement(str) {
+    let result = [];
+
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === 'A') {
+            result.push(['A', 'T']);
+        } else if (str[i] === 'T') {
+            result.push(['T', 'A']);
+        } else if (str[i] === 'G') {
+            result.push(['G', 'C']);
+        } else {
+            result.push(['C', 'G']);
+        } 
+    }
+
+    return result;
+}
+
+console.log(pairElement("ATCGA"));
+console.log(pairElement("TTGAG"));
+console.log(pairElement("CTCTA"));
